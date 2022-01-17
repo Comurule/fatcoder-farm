@@ -7,3 +7,4 @@ yarn.lock
 db
 docker-compose.yml
 logs
+.DS_Store
