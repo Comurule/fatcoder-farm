@@ -1,23 +1,19 @@
 version: '3.8'
-services:
-  # db:
-  #   image: postgres:14.1-alpine
-  #   restart: always
-  #   env_file:
-  #     - database.env
-  #   ports:
-  #     - '5432:5432'
-  #   volumes: 
-  #     - ./db:/var/lib/postgresql/data
-
-  app:
-    build: ./
+services: 
+  db:
+    image: "postgres"
+    env_file:
+      - .env
     volumes:
-      - ./:/var/www/app
+      - /db:/var/lib/postgresql/data/
+
+  dev-app:
+    build: ./app
+    volumes:
+      - ./app:/var/www/app
     ports:
       - 3000:3000
     environment:
       - NODE_ENV=development
       - PORT=3000
-    command:
-      sh -c 'npm i && node www/server.js'
+    command: sh -c 'npm i && node www/server.js'

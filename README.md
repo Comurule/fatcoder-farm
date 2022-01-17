@@ -11,9 +11,11 @@ An app to demonstrate my understanding of  System design patterns in a real worl
 ### How to Setup? ###
 
 To run this application, you'll need 
-[Git](https://git-scm.com) and 
+[Git](https://git-scm.com)  
 [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. 
-[Docker](https://www.docker.com/products/docker-desktop) 
+[Postgres](https://www.postgresql.org/download/) for the database.
+[Docker](https://www.docker.com/products/docker-desktop) for containerization.
+[Docker-Compose](https://docs.docker.com/compose/install/) to manage docker.
 
 * Clone the repository using this command(in your Command Line)
 ```
@@ -40,7 +42,7 @@ npm start
 * Check the port on the specified port on the env or 8080
 
 ### API End Points ###
-The Endpoints documentation can be gotten in [this Postman documentation](https://documenter.getpostman.com/view/11194465/UVXgNJHx).
+The Endpoints documentation can be gotten in [this Postman documentation](https://documenter.getpostman.com/view/11194465/UVXknFB6).
 
 ### Recommended Improvements
 - More input valdation and Error handling

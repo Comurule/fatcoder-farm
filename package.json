@@ -4,7 +4,8 @@
   "description": "An app to demonstrate my understanding of  System design patterns in a real world scenario.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint -c .eslintrc.json \"src/**\"  --fix",
+    "format": "prettier --write 'src/**/*.js'",
     "start": "node www/server",
     "dev": "nodemon www/server"
   },
@@ -31,7 +32,10 @@
     "winston": "^3.4.0"
   },
   "devDependencies": {
-    "eslint": "^8.7.0",
-    "nodemon": "^2.0.15"
+    "eslint": "^8.6.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.1"
   }
 }
