@@ -45,8 +45,9 @@ npm start
 The Endpoints documentation can be gotten in [this Postman documentation](https://documenter.getpostman.com/view/11194465/UVXknFB6).
 
 ### Recommended Improvements
-- More input valdation and Error handling
+- More input validation and Error handling
 - API unit and integration testing
+- More thought should be given to the scheduler to reduce the frequency of the call to the database.
 
 ### Author
 Chibuike Umechukwu

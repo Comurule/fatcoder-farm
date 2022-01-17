@@ -1,4 +1,7 @@
+const farmBuilding = require('./farmbuilding');
+const farmUnit = require('./farmUnit');
+
 module.exports = {
-    farmBuilding : require('./farmbuilding'),
-    farmUnit : require('./farmUnit'),
-}
+  farmBuilding,
+  farmUnit,
+};

@@ -1,4 +1,3 @@
-'use strict';
 module.exports = {
   up: async (queryInterface, Sequelize) => {
     await queryInterface.createTable('FarmUnits', {
@@ -6,7 +5,7 @@ module.exports = {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
       },
       name: {
         type: Sequelize.STRING,
@@ -22,24 +21,24 @@ module.exports = {
       },
       lastManualFeedTime: {
         type: Sequelize.INTEGER,
-        allowNull: false
+        allowNull: false,
       },
       lastFedTime: {
         type: Sequelize.INTEGER,
-        allowNull: false
+        allowNull: false,
       },
       isDead: {
         type: Sequelize.BOOLEAN,
         allowNull: false,
-        defaultValue: false
+        defaultValue: false,
       },
       createdAt: {
         allowNull: false,
-        type: Sequelize.DATE
+        type: Sequelize.DATE,
       },
       updatedAt: {
         allowNull: false,
-        type: Sequelize.DATE
+        type: Sequelize.DATE,
       },
       farmBuildingId: {
         type: Sequelize.INTEGER,
@@ -48,7 +47,7 @@ module.exports = {
 
     });
   },
-  down: async (queryInterface, Sequelize) => {
+  down: async (queryInterface) => {
     await queryInterface.dropTable('FarmUnits');
-  }
+  },
 };

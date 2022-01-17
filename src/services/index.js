@@ -1,4 +1,4 @@
 module.exports = {
-    farmBuildingService : require('./farmbuilding.service'),
-    farmUnitService : require('./farmUnit.service'),
-}
+  farmBuildingService: require('./farmbuilding.service'),
+  farmUnitService: require('./farmUnit.service'),
+};

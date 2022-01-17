@@ -1,8 +1,6 @@
 exports.getNumber = (num, alternative) => {
-    const n = Number(num);
-    return isNaN(num) ? alternative : num;
+  const n = Number(num);
+  return Number.isNaN(n) ? alternative : n;
 };
 
-exports.getThousand = (num) => {
-    return Math.floor(num / 1000);
-};
+exports.getThousand = (num) => Math.floor(num / 1000);
