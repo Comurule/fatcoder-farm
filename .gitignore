@@ -4,3 +4,5 @@ database.env
 test.js
 .env
 yarn.lock
+db
+docker-compose.yml

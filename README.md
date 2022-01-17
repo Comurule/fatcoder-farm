@@ -27,7 +27,7 @@ git clone https://github.com/Comurule/fatcoder-farm.git
 cd fatcoder-farm
 ```
 
-* Create .env file for environmental variables in your root directory like the __.env.sample__ file and provide the mongo database uri 
+* Create .env file for environmental variables in your root directory like the __.env.sample__ file and provide the necessary details. ( You can also change the defaukt values of the system configurations in `src/config/sysConfig.js`).
 
 * Install all dependencies using this command(in your Command Line)
 ```

@@ -13,7 +13,7 @@ let sequelize = new Sequelize(
   config.password,
   {
     ...config,
-    // logging: false,
+    logging: false,
     multipleStatements: true
   }
 );

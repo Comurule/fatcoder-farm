@@ -1,0 +1,45 @@
+{"level":"info","message":"Listening on PORT: 8081","timestamp":"2022-01-17 10:24:42"}
+{"level":"info","message":"[Farm Unit Job]::Starting to deplete the HealthPoint of all Farm Units.","timestamp":"2022-01-17 10:24:43"}
+{"level":"info","message":"[Farm Unit Job]::Finished to deplete the HealthPoint of all Farm Units. result: 6","timestamp":"2022-01-17 10:24:43"}
+{"level":"info","message":"[Farm Building Job]::Starting to feed all Farm Units in Farm Buildings.","timestamp":"2022-01-17 10:24:43"}
+{"level":"info","message":"[Farm Building Job]::Finished to feed all Farm Units in Farm Buildings. result: 2,6","timestamp":"2022-01-17 10:24:43"}
+{"level":"info","message":"[Farm Unit Job]::Starting to deplete the HealthPoint of all Farm Units.","timestamp":"2022-01-17 10:24:44"}
+{"level":"info","message":"[Farm Unit Job]::Finished to deplete the HealthPoint of all Farm Units. result: 0","timestamp":"2022-01-17 10:24:44"}
+{"level":"info","message":"[Farm Building Job]::Starting to feed all Farm Units in Farm Buildings.","timestamp":"2022-01-17 10:24:44"}
+{"level":"info","message":"[Farm Building Job]::Finished to feed all Farm Units in Farm Buildings. result: 2,6","timestamp":"2022-01-17 10:24:44"}
+{"level":"info","message":"[Farm Unit Job]::Starting to deplete the HealthPoint of all Farm Units.","timestamp":"2022-01-17 10:24:45"}
+{"level":"info","message":"[Farm Unit Job]::Finished to deplete the HealthPoint of all Farm Units. result: 0","timestamp":"2022-01-17 10:24:45"}
+{"level":"info","message":"[Farm Building Job]::Starting to feed all Farm Units in Farm Buildings.","timestamp":"2022-01-17 10:24:45"}
+{"level":"info","message":"[Farm Building Job]::Finished to feed all Farm Units in Farm Buildings. result: 2,6","timestamp":"2022-01-17 10:24:45"}
+{"level":"info","message":"[Farm Unit Job]::Starting to deplete the HealthPoint of all Farm Units.","timestamp":"2022-01-17 10:24:46"}
+{"level":"info","message":"[Farm Unit Job]::Finished to deplete the HealthPoint of all Farm Units. result: 0","timestamp":"2022-01-17 10:24:46"}
+{"level":"info","message":"[Farm Building Job]::Starting to feed all Farm Units in Farm Buildings.","timestamp":"2022-01-17 10:24:46"}
+{"level":"info","message":"[Farm Building Job]::Finished to feed all Farm Units in Farm Buildings. result: 2,6","timestamp":"2022-01-17 10:24:46"}
+{"level":"info","message":"[Farm Unit Job]::Starting to deplete the HealthPoint of all Farm Units.","timestamp":"2022-01-17 10:24:47"}
+{"level":"info","message":"[Farm Unit Job]::Finished to deplete the HealthPoint of all Farm Units. result: 0","timestamp":"2022-01-17 10:24:47"}
+{"level":"info","message":"[Farm Building Job]::Starting to feed all Farm Units in Farm Buildings.","timestamp":"2022-01-17 10:24:47"}
+{"level":"info","message":"[Farm Building Job]::Finished to feed all Farm Units in Farm Buildings. result: 2,6","timestamp":"2022-01-17 10:24:47"}
+{"level":"info","message":"[Farm Unit Job]::Starting to deplete the HealthPoint of all Farm Units.","timestamp":"2022-01-17 10:24:48"}
+{"level":"info","message":"[Farm Unit Job]::Finished to deplete the HealthPoint of all Farm Units. result: 0","timestamp":"2022-01-17 10:24:48"}
+{"level":"info","message":"[Farm Building Job]::Starting to feed all Farm Units in Farm Buildings.","timestamp":"2022-01-17 10:24:48"}
+{"level":"info","message":"[Farm Building Job]::Finished to feed all Farm Units in Farm Buildings. result: 2,6","timestamp":"2022-01-17 10:24:48"}
+{"level":"info","message":"[Farm Unit Job]::Starting to deplete the HealthPoint of all Farm Units.","timestamp":"2022-01-17 10:24:49"}
+{"level":"info","message":"[Farm Unit Job]::Finished to deplete the HealthPoint of all Farm Units. result: 0","timestamp":"2022-01-17 10:24:49"}
+{"level":"info","message":"[Farm Building Job]::Starting to feed all Farm Units in Farm Buildings.","timestamp":"2022-01-17 10:24:49"}
+{"level":"info","message":"[Farm Building Job]::Finished to feed all Farm Units in Farm Buildings. result: 2,6","timestamp":"2022-01-17 10:24:49"}
+{"level":"info","message":"[Farm Unit Job]::Starting to deplete the HealthPoint of all Farm Units.","timestamp":"2022-01-17 10:24:50"}
+{"level":"info","message":"[Farm Unit Job]::Finished to deplete the HealthPoint of all Farm Units. result: 0","timestamp":"2022-01-17 10:24:50"}
+{"level":"info","message":"[Farm Building Job]::Starting to feed all Farm Units in Farm Buildings.","timestamp":"2022-01-17 10:24:50"}
+{"level":"info","message":"[Farm Building Job]::Finished to feed all Farm Units in Farm Buildings. result: 2,6","timestamp":"2022-01-17 10:24:50"}
+{"level":"info","message":"[Farm Unit Job]::Starting to deplete the HealthPoint of all Farm Units.","timestamp":"2022-01-17 10:24:51"}
+{"level":"info","message":"[Farm Unit Job]::Finished to deplete the HealthPoint of all Farm Units. result: 0","timestamp":"2022-01-17 10:24:51"}
+{"level":"info","message":"[Farm Building Job]::Starting to feed all Farm Units in Farm Buildings.","timestamp":"2022-01-17 10:24:51"}
+{"level":"info","message":"[Farm Building Job]::Finished to feed all Farm Units in Farm Buildings. result: 2,6","timestamp":"2022-01-17 10:24:51"}
+{"level":"info","message":"[Farm Unit Job]::Starting to deplete the HealthPoint of all Farm Units.","timestamp":"2022-01-17 10:24:52"}
+{"level":"info","message":"[Farm Unit Job]::Finished to deplete the HealthPoint of all Farm Units. result: 0","timestamp":"2022-01-17 10:24:52"}
+{"level":"info","message":"[Farm Building Job]::Starting to feed all Farm Units in Farm Buildings.","timestamp":"2022-01-17 10:24:52"}
+{"level":"info","message":"[Farm Building Job]::Finished to feed all Farm Units in Farm Buildings. result: 2,6","timestamp":"2022-01-17 10:24:52"}
+{"level":"info","message":"[Farm Unit Job]::Starting to deplete the HealthPoint of all Farm Units.","timestamp":"2022-01-17 10:24:53"}
+{"level":"info","message":"[Farm Unit Job]::Finished to deplete the HealthPoint of all Farm Units. result: 0","timestamp":"2022-01-17 10:24:53"}
+{"level":"info","message":"[Farm Building Job]::Starting to feed all Farm Units in Farm Buildings.","timestamp":"2022-01-17 10:24:53"}
+{"level":"info","message":"[Farm Building Job]::Finished to feed all Farm Units in Farm Buildings. result: 2,6","timestamp":"2022-01-17 10:24:53"}

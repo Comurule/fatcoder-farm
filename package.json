@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "eslint -c .eslintrc.json \"src/**\"  --fix",
     "format": "prettier --write 'src/**/*.js'",
-    "start": "node www/server",
+    "start": "NODE_ENV='production' node www/server",
     "dev": "nodemon www/server"
   },
   "repository": {
