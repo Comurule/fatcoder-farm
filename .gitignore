@@ -6,3 +6,4 @@ test.js
 yarn.lock
 db
 docker-compose.yml
+logs
