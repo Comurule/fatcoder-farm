@@ -11,11 +11,11 @@ An app to demonstrate my understanding of  System design patterns in a real worl
 ### How to Setup? ###
 
 To run this application, you'll need 
-[Git](https://git-scm.com)  
-[Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. 
-[Postgres](https://www.postgresql.org/download/) for the database.
-[Docker](https://www.docker.com/products/docker-desktop) for containerization.
-[Docker-Compose](https://docs.docker.com/compose/install/) to manage docker.
+- [Git](https://git-scm.com)  
+- [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. 
+- [Postgres](https://www.postgresql.org/download/)
+- [Docker](https://www.docker.com/products/docker-desktop)
+- [Docker-Compose](https://docs.docker.com/compose/install/) 
 
 * Clone the repository using this command(in your Command Line)
 ```
