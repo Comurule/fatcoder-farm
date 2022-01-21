@@ -32,8 +32,4 @@ if (process.env.NODE_ENV === 'production') {
   logger.clear().add(errorFileTransport).add(infoFileTransport);
 }
 
-<<<<<<< HEAD
-module.exports = logger;
-=======
 export default logger;
->>>>>>> 34b4b24 (fixed the docker automation and linting errors)
