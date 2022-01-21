@@ -1,6 +1,6 @@
-const { farmBuildingService } = require('../services');
+import * as farmBuildingService from '../services/farmbuilding.service';
 
-exports.createAFarmBuilding = async (req, res, next) => {
+export const createAFarmBuilding = async (req, res, next) => {
   try {
     const result = await farmBuildingService.createAFarmBuilding(req.body);
     return res.status(201).json({
@@ -13,7 +13,7 @@ exports.createAFarmBuilding = async (req, res, next) => {
   }
 };
 
-exports.listAllFarmBuildings = async (req, res, next) => {
+export const listAllFarmBuildings = async (req, res, next) => {
   try {
     const result = await farmBuildingService.listAllFarmBuildings();
     return res.status(200).json({

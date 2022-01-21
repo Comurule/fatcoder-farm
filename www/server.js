@@ -1,10 +1,9 @@
-const http = require('http');
-const app = require('../src');
-const logger = require('../src/utils/logger');
+import http from 'http';
+import app from '../src';
 
 
 const server = http.createServer(app);
 
 //App listens
 const port = process.env.PORT || 8081;
-server.listen(port, () => { logger.info(`Listening on PORT: ${port}`); });
+server.listen(port, () => { console.log(`Listening on PORT: ${port}`); });

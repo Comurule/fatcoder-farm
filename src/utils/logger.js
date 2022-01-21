@@ -1,5 +1,5 @@
-const winston = require('winston');
-const path = require('path');
+import winston from 'winston';
+import path from 'path';
 
 const { createLogger, format, transports } = winston;
 
@@ -32,4 +32,8 @@ if (process.env.NODE_ENV === 'production') {
   logger.clear().add(errorFileTransport).add(infoFileTransport);
 }
 
+<<<<<<< HEAD
 module.exports = logger;
+=======
+export default logger;
+>>>>>>> 34b4b24 (fixed the docker automation and linting errors)

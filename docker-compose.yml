@@ -1,0 +1,36 @@
+version: '3.8'
+services:
+  db:
+    env_file:
+      - ./.env
+    environment:
+      NODE_ENV: production
+    container_name: ${POSTGRES_HOST}
+    image: postgres:14.1-alpine
+    restart: always
+    ports:
+      - '5432:5432'
+    volumes:
+      - db:/var/lib/postgresql/data
+    networks:
+      - fatcoder_network
+  api:
+    container_name: fatcoder-farm
+    build: ./
+    image: fatcoder-farm-image
+    env_file:
+      - ./.env
+    depends_on:
+      - db
+    ports:
+      - ${PORT}:${PORT}
+    networks:
+      - fatcoder_network
+    volumes:
+      - './:/src'
+volumes:
+  db:
+    driver: local
+networks:
+  fatcoder_network:
+    driver: bridge

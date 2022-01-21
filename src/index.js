@@ -1,6 +1,7 @@
-const express = require('express');
-const cors = require('cors');
-const routes = require('./routes');
+import express from 'express';
+import cors from 'cors';
+import routes from './routes';
+import startScheduler from './scheduler';
 
 // Set up the express app
 const app = express();
@@ -15,6 +16,7 @@ app.use(express.urlencoded({ extended: false }));
 // Application Routes
 app.use('/api/v1', routes);
 
-require('./scheduler')();
+// Start recurring jobs
+startScheduler();
 
-module.exports = app;
+export default app;

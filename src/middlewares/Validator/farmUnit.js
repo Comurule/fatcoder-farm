@@ -1,5 +1,5 @@
-const { check } = require('express-validator');
-const validate = require('./baseValidator');
+import { check } from 'express-validator';
+import validate from './baseValidator';
 
 const validationRules = {
   checkId: [
@@ -24,20 +24,20 @@ const validationRules = {
       .notEmpty()
       .withMessage('FARM UNIT NAME is required')
       .isString()
-      .withMessage(
-        'FARM UNIT NAME must be in a string format.',
-      ),
+      .withMessage('FARM UNIT NAME must be in a string format.'),
     check('healthPoint')
       .trim()
       .optional()
       .notEmpty()
       .withMessage('HEALTH POINT can not be empty.')
       .isInt({ min: 50, max: 100 })
-      .withMessage('HEALTH POINT must be an integer within the range 50 - 100.'),
+      .withMessage(
+        'HEALTH POINT must be an integer within the range 50 - 100.',
+      ),
   ],
 };
 
-module.exports = (routeValidation) => [
+export default (routeValidation) => [
   validationRules[routeValidation],
   validate,
 ];

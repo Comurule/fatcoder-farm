@@ -1,37 +1,44 @@
-const repository = require('../database/repositories');
-const config = require('../config/sysConfig');
-const CustomError = require('../utils/customError');
-const logger = require('../utils/logger');
+import * as farmUnit from '../database/repositories/farmUnit';
+import config from '../config/sysConfig';
+import CustomError from '../utils/customError';
+import logger from '../utils/logger';
 
-exports.createAFarmUnit = async (data) => {
-  const checkDuplicate = await repository.farmUnit.getAFarmUnitByName(data.name);
+export const createAFarmUnit = async (data) => {
+  const checkDuplicate = await farmUnit.getAFarmUnitByName(data.name);
   if (checkDuplicate) throw new CustomError('Farm Unit record already exists.', 400);
 
-  const newFarmUnit = await repository.farmUnit.createAFarmUnit(data);
+  const newFarmUnit = await farmUnit.createAFarmUnit(data);
 
   return newFarmUnit;
 };
 
-exports.listAllFarmUnits = async (farmBuildingId) => {
-  const response = await repository.farmUnit.listAllFarmUnitsInABuilding(farmBuildingId);
-
-  return response;
+export const listAllFarmUnits = async (farmBuildingId) => {
+  const result = await farmUnit.listAllFarmUnitsInABuilding(farmBuildingId);
+  return result;
 };
 
-exports.feedAFarmUnit = async (id) => {
-  const savedRecord = await repository.farmUnit.getAFarmUnitById(id);
+export const feedAFarmUnit = async (id) => {
+  const savedRecord = await farmUnit.getAFarmUnitById(id);
   if (!savedRecord) throw new CustomError('Farm Unit Record not Found', 404);
 
   if (savedRecord.isDead) throw new CustomError('A dead Farm Unit cannot be fed.', 400);
 
-  const response = await repository.farmUnit.feedAFarmUnitManually(id);
-  if (!response) throw new CustomError(`You can only feed this farm unit once every ${config.MIN_SECONDS_TO_MANUALLY_FEED_A_UNIT}.`, 400);
-
+  const response = await farmUnit.feedAFarmUnitManually(id);
+  if (!response) {
+    throw new CustomError(
+      `You can only feed this farm unit once every ${config.MIN_SECONDS_TO_MANUALLY_FEED_A_UNIT} seconds.`,
+      400,
+    );
+  }
   return true;
 };
 
-exports.depleteTheHealthPointOfAllFarmUnits = async () => {
-  logger.info('[Farm Unit Job]::Starting to deplete the HealthPoint of all Farm Units.');
-  const r = await repository.farmUnit.depleteSelectedFarmUnits();
-  logger.info(`[Farm Unit Job]::Finished to deplete the HealthPoint of all Farm Units. result: ${r}`);
+export const depleteTheHealthPointOfAllFarmUnits = async () => {
+  logger.info(
+    '[Farm Unit Job]::Starting to deplete the HealthPoint of all Farm Units.',
+  );
+  const r = await farmUnit.depleteSelectedFarmUnits();
+  logger.info(
+    `[Farm Unit Job]::Finished to deplete the HealthPoint of all Farm Units. result: ${r}`,
+  );
 };

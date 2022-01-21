@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   up: async (queryInterface, Sequelize) => {
     await queryInterface.createTable('FarmUnits', {
       id: {
@@ -44,7 +44,6 @@ module.exports = {
         type: Sequelize.INTEGER,
         allowNull: false,
       },
-
     });
   },
   down: async (queryInterface) => {

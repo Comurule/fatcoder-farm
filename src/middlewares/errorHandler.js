@@ -1,7 +1,7 @@
-const CustomError = require('../utils/customError');
-const logger = require('../utils/logger');
+import CustomError from '../utils/customError';
+import logger from '../utils/logger';
 
-module.exports = (err, req, res) => {
+export default (err, req, res) => {
   if (err instanceof CustomError) {
     return res
       .status(err.status)

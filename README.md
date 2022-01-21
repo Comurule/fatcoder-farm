@@ -27,16 +27,12 @@ git clone https://github.com/Comurule/fatcoder-farm.git
 cd fatcoder-farm
 ```
 
-* Create .env file for environmental variables in your root directory like the __.env.sample__ file and provide the necessary details. ( You can also change the defaukt values of the system configurations in `src/config/sysConfig.js`).
+* Create .env file for environmental variables in your root directory like the __.env.sample__ file and provide the necessary details. ( You can also change the default values of the system configurations in `src/config/sysConfig.js`).
 
-* Install all dependencies using this command(in your Command Line)
+* Run the docker-compose file to run the app setup and migrate the database automatically.(Ensure this command is run in the app root directory `/fatcoder-farm`).
+For this project, NODE_ENV is set to production to enable the docker to run seamlessly.
 ```
-npm install
-```
-
-* Run the app with this command(in your Command Line)
-```
-npm start
+docker-compose up
 ```
 
 * Check the port on the specified port on the env or 8080

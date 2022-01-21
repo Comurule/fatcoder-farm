@@ -1,4 +1,4 @@
-const { validationResult } = require('express-validator');
+import { validationResult } from 'express-validator';
 
 /**
  * Reduces the validation array into an object like this <{[param]:ParamValidatorArray[]}>
@@ -40,4 +40,4 @@ const validateInputs = async (req, res, next) => {
   return next();
 };
 
-module.exports = validateInputs;
+export default validateInputs;

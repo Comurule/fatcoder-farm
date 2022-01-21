@@ -1,12 +1,12 @@
-const { CronJob } = require('cron');
-const farmBuildingService = require('../services/farmbuilding.service');
-const farmUnitService = require('../services/farmUnit.service');
+import { CronJob } from 'cron';
+import { feedAllFarmBuilding } from '../services/farmbuilding.service';
+import { depleteTheHealthPointOfAllFarmUnits } from '../services/farmUnit.service';
 
-module.exports = () => {
-  const job = new CronJob('* * * * * *', (async () => {
-    await farmUnitService.depleteTheHealthPointOfAllFarmUnits();
-    await farmBuildingService.feedAllFarmBuilding();
-  }));
+export default () => {
+  const job = new CronJob('* * * * * *', async () => {
+    await depleteTheHealthPointOfAllFarmUnits();
+    await feedAllFarmBuilding();
+  });
 
   return job.start();
 };

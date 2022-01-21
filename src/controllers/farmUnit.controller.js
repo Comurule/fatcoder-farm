@@ -1,6 +1,6 @@
-const { farmUnitService } = require('../services');
+import * as farmUnitService from '../services/farmUnit.service';
 
-exports.createAFarmUnit = async (req, res, next) => {
+export const createAFarmUnit = async (req, res, next) => {
   try {
     const result = await farmUnitService.createAFarmUnit(req.body);
     return res.status(201).json({
@@ -13,7 +13,7 @@ exports.createAFarmUnit = async (req, res, next) => {
   }
 };
 
-exports.listFarmUnitsInABuilding = async (req, res, next) => {
+export const listFarmUnitsInABuilding = async (req, res, next) => {
   const { farmBuildingId } = req.query;
   try {
     const result = await farmUnitService.listAllFarmUnits(farmBuildingId);
@@ -27,7 +27,7 @@ exports.listFarmUnitsInABuilding = async (req, res, next) => {
   }
 };
 
-exports.feedAFarmUnit = async (req, res, next) => {
+export const feedAFarmUnit = async (req, res, next) => {
   try {
     await farmUnitService.feedAFarmUnit(req.params.id);
 

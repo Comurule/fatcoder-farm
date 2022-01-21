@@ -5,9 +5,13 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint -c .eslintrc.json \"src/**\"  --fix",
-    "format": "prettier --write \"src/**.js\"",
-    "start": "NODE_ENV='production' node www/server",
-    "dev": "nodemon www/server"
+    "format": "prettier --write 'src/**/*.js'",
+    "db:migrate": "npx sequelize-cli db:migrate --url postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${POSTGRES_HOST}/${POSTGRES_DB}",
+    "db:empty": "npx sequelize-cli db:migrate:undo:all --url postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${POSTGRES_HOST}/${POSTGRES_DB}",
+    "db:reset": "npm run db:empty && npm run db:migrate",
+    "start:prod": "npm run db:migrate && npm run start",
+    "start": "babel-node www/server",
+    "dev": "nodemon --exec babel-node www/server"
   },
   "repository": {
     "type": "git",
@@ -21,6 +25,10 @@
   },
   "homepage": "https://github.com/Comurule/fatcoder-farm#readme",
   "dependencies": {
+    "@babel/core": "^7.16.10",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/register": "^7.16.9",
     "cors": "^2.8.5",
     "cron": "^1.8.2",
     "dotenv": "^12.0.3",

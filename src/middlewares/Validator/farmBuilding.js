@@ -1,5 +1,5 @@
-const { check } = require('express-validator');
-const validate = require('./baseValidator');
+import { check } from 'express-validator';
+import validate from './baseValidator';
 
 const validationRules = {
   create: [
@@ -8,21 +8,17 @@ const validationRules = {
       .notEmpty()
       .withMessage('FARM BUILDING NAME is required')
       .isAlphanumeric()
-      .withMessage(
-        'FARM BUILDING NAME must be in a alphanumeric format.',
-      ),
+      .withMessage('FARM BUILDING NAME must be in a alphanumeric format.'),
     check('type')
       .trim()
       .notEmpty()
       .withMessage('FARM UNIT TYPE is required.')
       .isAlphanumeric()
-      .withMessage(
-        'FARM UNIT TYPE must be in a alphanumeric format.',
-      ),
+      .withMessage('FARM UNIT TYPE must be in a alphanumeric format.'),
   ],
 };
 
-module.exports = (routeValidation) => [
+export default (routeValidation) => [
   validationRules[routeValidation],
   validate,
 ];
