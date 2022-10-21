@@ -1,12 +1,9 @@
-# fatcoder-farm
+# Fatcoder Farm
 
 ### Description ###
 
-* Quick summary:
-An app to demonstrate my understanding of  System design patterns in a real world scenario.
-
-* Version: 
-1.0
+#### Quick summary:
+An app to demonstrate my understanding of  System design patterns in a [real world scenario](./docs/Node.js%20Coding%20Challenge%20%E2%80%93%20Farm%20Simulator%20-%20FatCat%20Coders.pdf).
 
 ### How to Setup? ###
 
@@ -18,12 +15,12 @@ To run this application, you'll need
 - [Docker-Compose](https://docs.docker.com/compose/install/) 
 
 * Clone the repository using this command(in your Command Line)
-```
+```bash
 git clone https://github.com/Comurule/fatcoder-farm.git
 ```
 
 * Go into the repository
-```
+```bash
 cd fatcoder-farm
 ```
 
@@ -31,7 +28,7 @@ cd fatcoder-farm
 
 * Run the docker-compose file to run the app setup and migrate the database automatically.(Ensure this command is run in the app root directory `/fatcoder-farm`).
 For this project, NODE_ENV is set to production to enable the docker to run seamlessly.
-```
+```bash
 docker-compose up
 ```
 
