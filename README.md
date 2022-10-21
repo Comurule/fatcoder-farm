@@ -3,7 +3,7 @@
 ### Description ###
 
 #### Quick summary:
-An app to demonstrate my understanding of  System design patterns in a [real world scenario](./docs/Node.js%20Coding%20Challenge%20%E2%80%93%20Farm%20Simulator%20-%20FatCat%20Coders.pdf).
+An app to demonstrate my understanding of  System design patterns in a [real world scenario](./docs/Node.js%20Coding%20Challenge%20%E2%80%93%20Farm%20Simulator.pdf).
 
 ### How to Setup? ###
 
